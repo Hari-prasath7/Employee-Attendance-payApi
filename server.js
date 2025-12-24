@@ -13,6 +13,9 @@ app.use(express.json());
 // Database
 connectDB(); 
 
+const authRoutes = require("./src/routes/authRoutes");
+app.use("/api/auth", authRoutes);
+
 // Routes
 app.use("/api/employees", require("./src/routes/employeeRoutes"));
 app.use("/api/attendance", require("./src/routes/attendanceRoutes"));

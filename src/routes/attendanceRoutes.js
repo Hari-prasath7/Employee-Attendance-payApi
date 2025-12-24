@@ -1,5 +1,6 @@
 const express = require("express");
-const router = express.Router();
+const router = express.Router(); 
+const authMiddleware = require("../middlewares/authMiddleware");
 
 const {
     punchIn,
@@ -7,8 +8,8 @@ const {
     getAttendance
 } = require("../controllers/attendanceController");
 
-router.post("/punch-in", punchIn);
-router.put("/punch-out/:id", punchOut);
-router.get("/:employeeId", getAttendance);
+router.post("/punch-in",authMiddleware, punchIn);
+router.put("/punch-out/:id",authMiddleware, punchOut);
+router.get("/:employeeId",authMiddleware, getAttendance);
 
 module.exports = router;

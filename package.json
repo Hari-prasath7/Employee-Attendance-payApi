@@ -16,5 +16,17 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.3"
-  }
+  },
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hari-prasath7/Employee-Attendance-payApi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hari-prasath7/Employee-Attendance-payApi/issues"
+  },
+  "homepage": "https://github.com/Hari-prasath7/Employee-Attendance-payApi#readme"
 }
